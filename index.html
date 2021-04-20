@@ -19,11 +19,11 @@
 </head>
 
 <body>
-    <!--шапка-->
+    <!--header-->
     <header>
 
 
-        <nav class="conteiner-header main-nav">
+        <nav class="conteiner-header">
             <a href="" class="logo">Web<span class="logotip">Studio</span></a>
             <ul class="menu-nav list">
                 <li class="item link">
@@ -40,26 +40,19 @@
             <ul class="contacts list">
 
                 <li class="item link ">
-
-
                     <a href="mailto:info@devstudio.com" class="saite-contacts">
                         <svg class="icon-mail ">
                             <use href=".//images/svg/clients.svg#envelope"></use>
 
-                        </svg>
-                        info@devstudio.com</a>
-
+                        </svg> info@devstudio.com
+                    </a>
                 </li>
-
-
                 <li class="item link ">
-
                     <a href="tel:+380961111111" class="saite-contacts ">
                         <svg class="icon-phone">
                             <use href=".//images/svg/clients.svg#smartphone"></use>
-
-                        </svg>
-                        +38 096 111 11 11 </a>
+                        </svg>+38 096 111 11 11
+                    </a>
                 </li>
 
             </ul>
@@ -71,10 +64,10 @@
     <main>
 
         <section class="hero">
-<div class="container">
-            <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
-            <button type="button" class="buttons" data-modal-open><span class="buts">Заказать услугу</span></button>
-</div>
+            <div class="container">
+                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
+                <button type="button" class="buttons" data-modal-open><span class="buts">Заказать услугу</span></button>
+            </div>
 
         </section>
 
@@ -354,7 +347,7 @@
         </section>
 
     </main>
-    <!--подвал-->
+    <!--footer-->
 
     <footer class="footer">
         <div class="container our-contacts">
@@ -410,179 +403,109 @@
             </div>
             <div class="card-footer position-join">
                 <h4 class="join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
-                    <form class="footer-form">
-                        <label>
-                            <input type="email" name="email" placeholder="E-mail" novalidate />
-                        </label>
+                <form class="footer-form">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail" novalidate />
+                    </label>
                     <button type="submit" class="footer-button">
                         Подписаться
-                    <svg class="social-icon-footer " width="24" height="24">
-                        <use href="./images/svg/form-icon.svg#icon-send"></use>
-                    </svg>
+                        <svg class="social-icon-footer " width="24" height="24">
+                            <use href="./images/svg/form-icon.svg#icon-send"></use>
+                        </svg>
                     </button>
-                    </form>
+                </form>
 
             </div>
-        
+
     </footer>
     <!--modal windows-->
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <button class="buttom-close" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <button class="buttom-close" data-modal-close>
 
-            <svg class="icon-close" width="11" height="11">
-                <use href="./images/close-new.svg#icon-close" class="icon-close" ></use>
-            </svg>
-        </button>
-      
-<!-- 
-    <form class="modal-form">
-    <h3 class="modal-title">
-        Оставьте свои данные, мы вам перезвоним
-    </h3>
+                <svg class="icon-close" width="11" height="11">
+                    <use href="./images/close-new.svg#icon-close" class="icon-close"></use>
+                </svg>
+            </button>
 
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="text" name="user-name" id="user-name" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#person-black">
-                </use>
-            </svg>
+ 
+            <form class="modal-form">
+                <div class="form-field">
+                    <label class="modal-ladel" for="username">Имя</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="text" name="username" id="username" autofocus>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#person-black"></use>
+                        </svg>
+                    </div>
+                </div>
 
-            <label for="user-name" class="modal-lable">
-                Имя
-            </label>
+                <div class="form-field">
+                    <label class="modal-ladel" for="tel">Телефон</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="tel" name="tel" id="tel">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label class="modal-ladel" for="email">Почта</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="email" name="email" id="email">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field feedback">
+                    <label class="modal-ladel" for="username">Комментарий</label>
+                    <textarea class="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </div>
+
+                <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="checkbox" />
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="checkbox-link link">
+                        Условия договора
+                    </a>
+                </label>
+
+                <button type="submit" class="modal-form-button">
+                    Отправить
+                </button>
+            </form>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script>
+        (() => {
 
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="tel" name="user-tel" id="user-tel" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#phone-black">
-                </use>
-            </svg>
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
 
-            <label for="user-tel" class="modal-lable">
-                Телефон
-            </label>
-        </div>
-    </div>
-
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="email" name="user-mail" id="user-mail" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#email-black">
-                </use>
-            </svg>
-
-            <label for="user-mail" class="modal-lable">
-                Почта
-            </label>
-        </div>
-    </div>
-
-    <div class="modal-unit">
-        <textarea name="user-comment" id="user-comment" class="user-comment" rows="8" placeholder=" "></textarea>
-        <label for="user-comment" class="modal-aria-lable">
-            Комментарий
-        </label>
-    </div>
-
-        
-      
-       
-<label for="modal-checkbox" class="modal-checkbox-policy">
-    <input type="checkbox" name="modal-checkbox" class="modal-checkbox" id="modal-checkbox" />
-    <span class="checkbox-icon-span"></span>
-
-    Соглашаюсь с рассылкой и принимаю&nbsp;
-    <a href="" class="modal-link" id="modal-link"> Условия договора</a>
-</label>
-
-    <button type="submit" id="form-submit" class="btn btn-modal">
-        Отправить
-    </button>
-</form> 
--->
-<form class="modal-form">
-    <div class="form-field">
-        <label class="modal-ladel" for="username">Имя</label>
-        <div class="modal-position">
-            <input class="modal-input" type="text" name="username" id="username" autofocus>
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#person-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field">
-        <label class="modal-ladel" for="tel">Телефон</label>
-        <div class="modal-position">
-            <input class="modal-input" type="tel" name="tel" id="tel">
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#phone-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field">
-        <label class="modal-ladel" for="email">Почта</label>
-        <div class="modal-position">
-            <input class="modal-input" type="email" name="email" id="email">
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#email-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field feedback">
-        <label class="modal-ladel" for="username">Комментарий</label>
-        <textarea class="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
-    </div>
-
-    <label class="checkbox-label">
-        <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="checkbox" />
-        <span class="checkbox-icon"></span>
-        Соглашаюсь с рассылкой и принимаю
-        <a href="#" class="checkbox-link link">
-            Условия договора
-        </a>
-    </label>
-
-    <button type="submit" class="modal-form-button">
-        Отправить
-    </button>
-</form>
-    </div>
-</div>
-<script src="./js/modal.js"></script>
-<script>
-    (() => {
-
-        document
-            .querySelector('.js-speaker-form')
-            .addEventListener('submit', e => {
-
-                e.preventDefault();
+                    e.preventDefault();
 
 
 
-                new FormData(e.currentTarget).forEach((value, name) =>
+                    new FormData(e.currentTarget).forEach((value, name) =>
 
-                    console.log(`${name}: ${value}`),
+                        console.log(`${name}: ${value}`),
 
-                );
+                    );
 
-            });
+                });
 
-    })();
-</script>
+        })();
+    </script>
 
 </body>
 
 
-   
+
 </html>
