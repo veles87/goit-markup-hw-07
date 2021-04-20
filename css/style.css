@@ -95,6 +95,10 @@ h2 {
 
   color: var(--title-color);
 }
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 /*Header*/
 .containers-portfolio {
   width: 1200px;
@@ -111,9 +115,6 @@ h2 {
   padding: 0px 15px;
   width: 1200px;
   height: 80px;
-}
-header {
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -166,16 +167,16 @@ header {
 }
 
 /*menu*/
-.menu-nav .item + .item {
+
+.menu-nav__item {
   margin-left: 50px;
 }
-
 .menu-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.saite-nav1 {
+.saite-nav {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -191,8 +192,8 @@ header {
   color: var(--title-color);
 }
 
-.saite-nav1:hover,
-.saite-nav1:focus {
+.saite-nav:hover,
+.saite-nav:focus {
   color: var(--hover-color);
 }
 /*icon header*/
