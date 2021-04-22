@@ -1,0 +1,166 @@
+// Footer Page
+
+//Logo footer
+.footer {
+    background-color: $primary-background;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__widget {
+        flex-basis: calc((50% - 45px) / 2);
+    }
+    &__widget:last-child {
+        flex-basis: calc(50% - 15px);
+    }
+    &__logo {
+        @extend %link;
+        padding: 0;
+        display: block;
+        margin-bottom: 20px;
+
+        font-family: "Raleway", sans-serif;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+    &__logo--white {
+        @include transition(color);
+        color: #ffffff;
+    }
+    &__logo--white:hover,
+    &__logo--white:focus {
+        color: $accent-color;
+    }
+
+    &__title {
+        display: flex;
+        padding-top: 12px;
+        margin-bottom: 20px;
+        color: #ffffff;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+
+// Список контактов в футере
+.bottom-link {
+    @extend %list;
+
+    &__maps {
+        @extend %link;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    &__mail {
+        display: block;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    &__mail,
+    &__tel {
+        @extend %link;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__maps:hover,
+    &__mail:hover,
+    &__tel:hover,
+    &__maps:focus,
+    &__mail:focus,
+    &__tel:focus {
+        color: $accent-color;
+    }
+}
+
+/* Присоединяйтесь  */
+.footer-social {
+    @extend %list;
+    display: inline-flex;
+
+    &__item {
+        width: 44px;
+        height: 44px;
+        background-color: transparent;
+        margin-right: 10px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__link {
+        @include centeredFlex(flex);
+        @extend %link;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-background-color;
+    }
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+// Форма в футере
+.footer-form {
+    &__input {
+        width: 350px;
+        border-radius: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+
+        @include bordered(rgba(255, 255, 255, 0.3));
+        color: rgba(255, 255, 255, 0.6);
+        background-color: $primary-background;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        margin-right: 12px;
+    }
+    &__button {
+        @include centeredFlex(inline-flex);
+        width: 200px;
+        padding: 10px;
+
+        background: $accent-background-color;
+        color: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+
+        cursor: $cursor-button;
+    }
+    &__button:hover,
+    &__button:focus {
+        background-color: $accent-buttom;
+    }
+    &__telegram {
+        fill: currentColor;
+        margin-left: 10px;
+    }
+}

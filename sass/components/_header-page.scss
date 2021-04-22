@@ -1,0 +1,118 @@
+/* Header */
+/* Main nav */
+.header {
+  border-bottom: 1px solid #ececec;
+  &__section {
+    @include centeredFlex(flex);
+    @extend %container;
+  }
+}
+.top-navigation {
+  display: flex;
+}
+/* Logo */
+.logo {
+  @extend %link;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: #000000;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &__interactive {
+    color: $accent-color;
+  }
+}
+
+/* Site nav */
+.site-nav {
+  @extend %list;
+  display: flex;
+  margin-left: 93px;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    @extend %link;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__link--current {
+    position: relative;
+    color: $accent-color;
+  }
+  &__link--current:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+/* Header contacts */
+.top-connection {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    @extend %link;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__icon-mailto {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

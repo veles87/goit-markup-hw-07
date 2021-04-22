@@ -1,0 +1,60 @@
+body {
+  background-color: #ffffff;
+  color: $primary-text-color;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* 1. Изменение в ссылках */
+.link {
+  color: inherit;
+
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. Точки и отступы в списках ul */
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* 4. Сброс h1-h6, ul, p */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+}
+
+/* 5. Контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 6. Отступы секций */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* 7. Img */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

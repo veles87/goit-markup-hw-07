@@ -1,0 +1,54 @@
+// Hero
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero-overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #c4c4c4;
+}
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2f303a;
+
+    &__title {
+        margin: 0 auto 30px;
+        max-width: 696px;
+
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    &__button {
+        @include transition(color);
+        @include transition(background-color);
+        @include transition(box-shadow);
+
+        padding: 10px 32px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        min-width: 200px;
+        border: none;
+        color: #ffffff;
+        background-color: $accent-background-color;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        cursor: $cursor-button;
+    }
+    &__button:hover,
+    &__button:focus {
+        background-color: $accent-buttom;
+    }
+}
