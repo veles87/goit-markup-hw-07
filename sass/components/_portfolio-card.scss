@@ -22,23 +22,23 @@
   margin-top: var(--card-set-gap);
 }
 
-.portfolio-card__link:hover,
-.portfolio-card__link:focus {
-  box-shadow: var(--card-shadow-hover);
-  border-radius: 4px;
-  color: var(--hover-color);
-}
 .portfolio-card__link {
   cursor: pointer;
-}
-.card {
-  box-shadow: var(--card-shadow);
-  border-radius: 4px;
-  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--card-shadow-hover);
+    border-radius: 4px;
+    color: var(--hover-color);
+  }
 }
 
 .card-content {
   padding: 20px 24px;
+
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 .card-text {
