@@ -63,10 +63,7 @@
   fill: var(--social-team-icon-color);
   cursor: pointer;
 }
-.social-icon__link:hover,
-.social-icon__link:focus {
-  fill: var(--white-color-text);
-}
+
 .social-icon__link:hover .team-icon,
 .social-icon__ink:focus .team-icon {
   fill: var(--white-color-text);
@@ -88,4 +85,16 @@
     background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+
+    fill: var(--white-color-text);
+    outline: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }

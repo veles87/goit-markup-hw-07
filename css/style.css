@@ -302,8 +302,7 @@ header {
   cursor: pointer;
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background: var(--buttos-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -318,8 +317,7 @@ header {
   color: var(--white-color-text);
 }
 
-.hero__button-text:hover,
-.hero__button-text:focus {
+.hero__button-text:hover, .hero__button-text:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -502,11 +500,6 @@ header {
   cursor: pointer;
 }
 
-.social-icon__link:hover,
-.social-icon__link:focus {
-  fill: var(--white-color-text);
-}
-
 .social-icon__link:hover .team-icon,
 .social-icon__ink:focus .team-icon {
   fill: var(--white-color-text);
@@ -528,6 +521,16 @@ header {
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-icon__link:hover, .social-icon__link:focus {
+  background-color: var(--hover-color);
+  fill: var(--white-color-text);
+  outline: none;
+}
+
+.social-icon__link:not(:last-child) {
+  margin-right: 10px;
+}
+
 .client__title {
   font-family: Roboto;
   font-style: normal;
@@ -543,6 +546,11 @@ header {
 
 .icon__client {
   fill: var(--social-team-icon-color);
+}
+
+.icon__client:hover, .icon__client:focus {
+  fill: var(--hover-color);
+  border: 1px solid var(--hover-color);
 }
 
 .client__position a {
@@ -575,12 +583,6 @@ header {
   height: 90px;
   display: inline-grid;
   margin-right: 30px;
-}
-
-.icon__client:hover,
-.icon__client:focus {
-  fill: var(--hover-color);
-  border: 1px solid var(--hover-color);
 }
 
 .client:hover .icon__client,
@@ -623,6 +625,10 @@ footer {
   color: var(--white-color-text);
 }
 
+.footer__logos:hover {
+  color: var(--hover-color);
+}
+
 .footer-logo__color {
   font-family: Raleway;
   font-style: normal;
@@ -633,9 +639,10 @@ footer {
   color: var(--hover-color);
 }
 
-.footer__logos:hover,
-.footer-logo__color:hover,
-.contact-links:hover,
+.footer-logo__color:hover {
+  color: var(--hover-color);
+}
+
 .contact-links:hover {
   color: var(--hover-color);
 }
@@ -661,20 +668,8 @@ footer {
   cursor: pointer;
 }
 
-.footer__button:hover,
-.footer__button:focus {
+.footer__button:hover, .footer__button:focus {
   background-color: var(--buttos-hover-color);
-}
-
-.social-icon__link:hover,
-.social-icon__link:focus {
-  background-color: var(--hover-color);
-  fill: var(--white-color-text);
-  outline: none;
-}
-
-.social-icon__link:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer__main {
@@ -1051,12 +1046,6 @@ footer {
   opacity: 1;
 }
 
-.portfolio-card__link:hover,
-.portfolio-card__link:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -1087,12 +1076,6 @@ footer {
   border-radius: 4px;
 }
 
-.t {
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .modal:hover {
   transition-property: initial;
   transition-duration: 250ms;
@@ -1112,16 +1095,16 @@ footer {
   cursor: pointer;
 }
 
-.modal__close:hover .modal-icon__close,
-.modal__close:focus .modal-icon__close {
-  fill: var(--hover-color);
-  color: #188ce8;
-}
-
 .modal-icon__close {
   fill: #000000;
   margin-left: 1px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close:hover .modal-icon__close,
+.modal__close:focus .modal-icon__close {
+  fill: var(--hover-color);
+  color: #188ce8;
 }
 
 .modal-checkbox-policy {
@@ -1188,6 +1171,11 @@ footer {
 }
 
 .modal__input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
   width: 100%;
   height: 40px;
   padding-left: 43px;
@@ -1318,8 +1306,7 @@ footer {
   cursor: pointer;
 }
 
-.modal-form__button:hover,
-.modal-form__button:focus {
+.modal-form__button:hover, .modal-form__button:focus {
   background-color: var(--buttos-hover-color);
 }
 

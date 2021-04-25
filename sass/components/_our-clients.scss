@@ -15,6 +15,12 @@
 
 .icon__client {
   fill: var(--social-team-icon-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+    border: 1px solid var(--hover-color);
+  }
 }
 .client__position a {
   display: inline-flex;
@@ -27,8 +33,10 @@
   margin-left: auto;
   margin-right: auto;
 
-  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -49,11 +57,6 @@
   margin-right: 30px;
 }
 
-.icon__client:hover,
-.icon__client:focus {
-  fill: var(--hover-color);
-  border: 1px solid var(--hover-color);
-}
 .client:hover .icon__client,
 .client:focus .icon__client {
   stroke: var(--hover-color);

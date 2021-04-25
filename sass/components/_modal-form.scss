@@ -31,7 +31,7 @@
 }
 
 .modal-checkbox:checked + .checkbox-icon-span {
-  background-image: url('../images/svg/check.svg');
+  background-image: url("../images/svg/check.svg");
   background-size: contain;
   background-origin: border-box;
 
@@ -64,6 +64,12 @@
 }
 
 .modal__input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
   width: 100%;
   height: 40px;
   padding-left: 43px;
@@ -72,16 +78,17 @@
   outline: none;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within {
+    border-color: var(--hover-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover {
+    border-color: var(--hover-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.modal__input:focus-within {
-  border-color: var(--hover-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:hover {
-  border-color: var(--hover-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal__icon {
   position: absolute;
   top: 50%;
@@ -137,11 +144,13 @@
   margin-right: 7px;
   background: url(../images/svg/check1.svg);
   cursor: pointer;
+
+  &:hover {
+    fill: var(--hover-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.form-checkbox__icon:hover {
-  fill: var(--hover-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .form-checkbox__input:checked + .form-checkbox__icon {
   background: url(../images/svg/check2.svg);
 }
@@ -151,11 +160,12 @@
 
   text-decoration-line: underline;
   color: var(--hover-color);
+
+  &:hover {
+    color: var(--buttos-hover-color);
+  }
 }
 
-.form-checkbox__link:hover {
-  color: var(--buttos-hover-color);
-}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -193,10 +203,11 @@
   color: var(--white-color-text);
 
   cursor: pointer;
-}
-.modal-form__button:hover,
-.modal-form__button:focus {
-  background-color: var(--buttos-hover-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--buttos-hover-color);
+  }
 }
 
 .modal__title {

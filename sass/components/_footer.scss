@@ -18,6 +18,10 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--white-color-text);
+
+  &:hover {
+    color: var(--hover-color);
+  }
 }
 
 .footer-logo__color {
@@ -28,13 +32,15 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
-}
 
-.footer__logos:hover,
-.footer-logo__color:hover,
-.contact-links:hover,
-.contact-links:hover {
-  color: var(--hover-color);
+  &:hover {
+    color: var(--hover-color);
+  }
+}
+.contact-links {
+  &:hover {
+    color: var(--hover-color);
+  }
 }
 
 .footer__button {
@@ -63,22 +69,13 @@ footer {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
-.footer__button:hover,
-.footer__button:focus {
-  background-color: var(--buttos-hover-color);
-}
-.social-icon__link:hover,
-.social-icon__link:focus {
-  background-color: var(--hover-color);
 
-  fill: var(--white-color-text);
-  outline: none;
+  &:hover,
+  &:focus {
+    background-color: var(--buttos-hover-color);
+  }
 }
 
-.social-icon__link:not(:last-child) {
-  margin-right: 10px;
-}
 .footer__main {
   padding-top: 60px;
   padding-bottom: 60px;
