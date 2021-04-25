@@ -35,6 +35,11 @@ header {
 
   letter-spacing: 0.03em;
   color: var(--title-color);
+
+  &:hover,
+  &:hover {
+    color: var(--buttos-hover-color);
+  }
 }
 
 .link-current,

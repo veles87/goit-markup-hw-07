@@ -154,6 +154,10 @@ header {
   color: var(--title-color);
 }
 
+.logotip:hover, .logotip:hover {
+  color: var(--buttos-hover-color);
+}
+
 .link-current,
 .link:hover,
 .link:focus,
