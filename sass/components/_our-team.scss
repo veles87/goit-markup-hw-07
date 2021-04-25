@@ -71,7 +71,6 @@
 .our-team__social {
   padding: 0;
   margin-bottom: 30px;
-  margin-top: 16px;
 }
 .social-icon__link {
   display: inline-flex;
@@ -97,4 +96,12 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+}
+.our-team__title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.our-team__text {
+  padding-bottom: 16px;
 }

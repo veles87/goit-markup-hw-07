@@ -10,6 +10,7 @@
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+  margin: 0;
 }
 
 .section-about-us__title {
@@ -21,6 +22,7 @@
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 .section-about-us .section-about-us__feature + .section-about-us__feature {
   margin-left: 30px;

@@ -85,6 +85,7 @@ p {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin: 0;
 }
 
 h2 {
@@ -101,11 +102,11 @@ h2 {
 h3 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 2;
   color: var(--title-color);
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .visually {
@@ -126,7 +127,7 @@ header {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 0px 15px;
+  padding: 0px;
   width: 1200px;
   height: 80px;
 }
@@ -216,8 +217,8 @@ header {
   margin-left: auto;
 }
 
-.contacts__item {
-  margin-left: 50px;
+.contacts__item:last-child {
+  margin-left: 30px;
 }
 
 .header-icon__mail {
@@ -341,6 +342,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin: 0;
 }
 
 .section-about-us__title {
@@ -351,6 +353,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .section-about-us .section-about-us__feature + .section-about-us__feature {
@@ -512,7 +515,6 @@ header {
 .our-team__social {
   padding: 0;
   margin-bottom: 30px;
-  margin-top: 16px;
 }
 
 .social-icon__link {
@@ -533,6 +535,15 @@ header {
 
 .social-icon__link:not(:last-child) {
   margin-right: 10px;
+}
+
+.our-team__title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.our-team__text {
+  padding-bottom: 16px;
 }
 
 .client__title {
@@ -936,6 +947,13 @@ footer {
 .card-text {
   margin-top: 4px;
   margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
 }
 
 .card-main {
