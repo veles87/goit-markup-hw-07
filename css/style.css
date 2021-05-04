@@ -414,11 +414,28 @@ header {
 }
 
 .our-works {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .our-works {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-works {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-works {
+    width: 1200px;
+  }
 }
 
 .our-works__card-bg {
@@ -438,7 +455,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color-text);
 }
 
 .our-team__bc {
@@ -844,6 +861,7 @@ footer {
 }
 
 .footer__container {
+  display: flex;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -857,13 +875,12 @@ footer {
   padding-top: 94px;
 }
 
-.footer__container {
-  display: flex;
+.portfolio__conteiner {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filters {
@@ -903,22 +920,12 @@ footer {
   border-radius: 4px;
 }
 
-.portfolio__conteiner {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .portfolio__card {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .portfolio__card > .item {
@@ -956,10 +963,6 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.card-main {
-  margin: 0px;
-}
-
 .project-titles {
   font-family: Roboto;
   font-style: normal;
@@ -982,16 +985,6 @@ footer {
   letter-spacing: 0.03em;
   padding-left: 24px;
   padding-bottom: 20px;
-}
-
-.items {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 1130px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .card-thumb {

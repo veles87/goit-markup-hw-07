@@ -1,0 +1,62 @@
+.contacts-container {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	margin-left: auto;
+	align-items: center;
+
+	transition: $time-animation;
+
+	& .item + .item {
+		margin-left: 50px;
+	}
+}
+
+.icon-mail {
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	background-size: contain;
+	background-position: center;
+	margin-right: 10px;
+	fill: $title-text-color;
+
+	transition: $time-animation;
+}
+
+.icon-smartphone {
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	background-size: contain;
+	background-position: center;
+	margin-right: 10px;
+
+	transition: $time-animation;
+}
+
+.contacts-link {
+	display: inline-block;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	color: $title-text-color;
+	fill: $title-text-color;
+	text-decoration: none;
+
+	transition: $time-animation;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	&:hover svg,
+	&:focus svg {
+		fill: $accent-color;
+	}
+}

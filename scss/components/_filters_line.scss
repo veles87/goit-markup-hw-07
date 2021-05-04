@@ -1,0 +1,32 @@
+.filters-line {
+	outline: none;
+	text-align: center;
+}
+
+.portfolio-btn {
+	border: 0;
+
+	background: #f5f4fa;
+	color: $primerry-text-color;
+
+	font-family: $primerry-font;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-decoration: none;
+
+	padding: 6px 22px;
+	border-radius: 4px;
+	min-width: 78px;
+	min-height: 38px;
+	text-align: center;
+
+	transition: $time-animation;
+
+	&:hover,
+	&:focus {
+		background: $accent-color;
+		color: $primerry-bg-color;
+	}
+}
